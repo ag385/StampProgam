@@ -9,12 +9,15 @@ Display the number of stamps                                        ----  output
 
 End
 """
+#Test input number 16 should output 3.2 and round up to 4
+
+
+import math
+number_of_sheets = 16                                                                   #Step 1 
+number_of_stamps = number_of_sheets/5                                                   #Step 2
+round_stamps = math.ceil(number_of_stamps)                                              #Step 3
+print("The sheets of paper is " + str(number_of_sheets) + ".")                          
+print("The number of stamps needed is " + str(round_stamps) + ".")                      #Step 4
 
 
 
-
-Number_Of_Sheets = eval(input("What is the number of sheets of paper? "))               #Step 1 
-
-NUmber_Of_Stamps = Number_Of_Sheets/5                                                   #Step 2
-
-print("The number of Stamps needed for " + str(Number_Of_Sheets) + " Sheets is " + str(NUmber_Of_Stamps) + " Stamps.")    #Step 4
